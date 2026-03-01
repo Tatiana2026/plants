@@ -1,0 +1,56 @@
+.about {
+    padding: 93px 0px 94px 0px;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__container .text {
+    width: 605px;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text .we__are {
+    width: 463px;
+    height: 102px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    color: #e06733;
+}
+
+.text .lorem_ipsum_is_simply {
+    width: 605px;
+    height: 208px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #636060;
+}
+
+@media screen and (max-width: 768px) {
+    .about__container {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.about__container .text {
+    align-items: center;
+    }
+    
+h2.we__are {
+    font-size: 35px;
+    text-align: center;
+    }
+
+    .about__container img {
+    width: 250px;
+    }
+}

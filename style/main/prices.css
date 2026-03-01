@@ -1,0 +1,113 @@
+.prices__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0px 115px 0px;
+}
+
+.prices__name {
+    width: 135px;
+    height: 49px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    margin: 0 0 60px 0;
+}
+
+.our__bests {
+    max-width: 452px;
+    height: 103px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: right;
+    color: #000;
+}
+
+.service__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prices__list {
+    width: 332px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 34px 41px 34px 41px;
+    border: 1px solid #e3e1d5;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.list {
+    width: 250px;
+    height: 50px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edf2ec;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+}
+
+.image__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__container img:last-child {
+    position: absolute;
+}
+
+.second__block {
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.prices__contact {
+    width: 162px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prices__contact button {
+    width: 162px;
+    height: 50px;
+    margin: 38px 0 39px 0;
+    border: 2px solid #e06733;
+    border-radius: 6px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    color: #e06733;
+    background: none;
+}
+
+.prices__contact button:hover {
+    background-color: #e06733;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+.our__bests {
+    font-size: 25px;
+    line-height: 140%;
+    }
+.prices__name {
+    font-size: 35px;
+    }
+}

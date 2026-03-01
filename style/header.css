@@ -1,0 +1,42 @@
+.header {
+    height: 134px;
+    padding: 42px 0px;
+    background: #edf2ec;
+}
+
+.header__container {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--second-family);
+}
+
+.logo {
+    width: 79px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.nav__list {  
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    gap: 46px; 
+}
+
+.nav__list li a {
+    list-style: none; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 313%;
+    color: #010201;
+    text-decoration: none;
+}
+
+.nav__list li a:hover {
+    color: #e06733;
+    cursor: pointer
+}

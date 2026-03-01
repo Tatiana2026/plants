@@ -1,0 +1,73 @@
+.welcome {
+    background: #edf2ec;
+    padding: 62px 0px;
+}
+
+.welcome__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome__container .text {
+    display: flex;
+    flex-direction: column;
+    margin: 98px 0;
+}
+
+.text .we__grow {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 111%;
+    color: #717171;
+}
+
+.text .lorem__Ipsum {
+    margin: 42px 0 48px 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 175%;
+    color: #636060;
+}
+
+.green {
+    color: #499a18;
+}
+
+.welcome__container button {
+    width: 158px;
+    height: 44px;
+    border: 2px solid #e06733;
+    border-radius: 6px;
+    background: none;
+}
+
+.welcome__container button:hover {
+    background-color: #e06733;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   .welcome__container .text {
+    margin: 40px 0;
+    order: 1;
+    }
+   
+    .welcome__container img {
+    width: 280px;
+    order: 2;
+    }
+
+    .text .we__grow {
+    font-size: 35px;
+    line-height: 143%;
+    }
+
+    .text .lorem__Ipsum {
+    font-size: 16px;
+    line-height: 156%;
+    }
+}
