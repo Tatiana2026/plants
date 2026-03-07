@@ -12,6 +12,7 @@
 .welcome__container .text {
     display: flex;
     flex-direction: column;
+    max-width: 549px;
     margin: 98px 0;
 }
 
@@ -42,6 +43,12 @@
     border: 2px solid #e06733;
     border-radius: 6px;
     background: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
 }
 
 .welcome__container button:hover {
@@ -50,15 +57,17 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1257px) {
+    .welcome__container img {
+    width: 280px;
+    order: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
    .welcome__container .text {
     margin: 40px 0;
-    order: 1;
-    }
-   
-    .welcome__container img {
-    width: 280px;
-    order: 2;
+    order: 0;
     }
 
     .text .we__grow {
@@ -70,4 +79,38 @@
     font-size: 16px;
     line-height: 156%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .welcome {
+    padding: 24px 0px;
+    }
+
+    .welcome__container .text {
+    margin: 0;
+    }
+
+    .welcome__container img {
+    display: none;
+    }
+
+    .text .we__grow {
+    font-size: 25px;
+    line-height: 140%;
+    }
+
+    .text .lorem__Ipsum {
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    line-height: 156%;
+    }
+
+    .welcome__container button {
+    width: 100px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 200%;
+    }
+
 }

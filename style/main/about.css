@@ -1,33 +1,30 @@
 .about {
-    padding: 93px 0px 94px 0px;
+    padding: 93px 0px;
 }
 
 .about__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .about__container .text {
-    width: 605px;
-    height:350px;
+    max-width: 605px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.text .we__are {
-    width: 463px;
-    height: 102px;
+.we__are {
+    max-width: 463px;
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 40px;
     color: #e06733;
 }
 
-.text .lorem_ipsum_is_simply {
-    width: 605px;
-    height: 208px;
+.lorem_ipsum_is_simply {
+    max-width: 605px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
@@ -35,22 +32,48 @@
     color: #636060;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1257px) {
     .about__container {
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     }
 
-.about__container .text {
-    align-items: center;
+    .about__container img {
+    max-width: 250px;
+    max-height: 258px;
+    margin: 40px 0 0 0;
     }
-    
-h2.we__are {
+
+    .about__container .text {
+    align-items: center;
+    gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .we__are {
     font-size: 35px;
     text-align: center;
     }
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+    padding: 30px 0px;
+    }
 
     .about__container img {
-    width: 250px;
+    max-width: 150px;
+    max-height: 147px;
+    margin: 1px 0 0 0;
+    }
+
+    .we__are {
+    font-size: 35px;
+    }
+
+    .lorem_ipsum_is_simply {
+    font-size: 15px;
+    line-height: 167%;
     }
 }
