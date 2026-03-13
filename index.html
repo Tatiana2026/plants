@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header open">
         <div class="container header__container">
             <div class="logo">
                 <img src="assets/logo_vector.svg" alt="значок листьев">
@@ -20,6 +20,12 @@
                 <li><a href="#prices">Price</a></li>
                 <li><a href="#contact_Us">Contacts</a></li>
             </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </header>
     <main>
@@ -140,7 +146,7 @@
         </section>
     </main>
     <footer>
-        <div class="container content__container">
+        <div class="container footer__container">
             <div class="footer__contacts">
                 <span>©</span>
                 <span>2022</span>
@@ -155,5 +161,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+        document.querySelector('.nav__list').classList.toggle('open');
+    });
+    </script>
 </body>
 </html>
