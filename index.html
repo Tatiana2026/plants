@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header open">
+    <header class="header">
         <div class="container header__container">
             <div class="logo">
                 <img src="assets/logo_vector.svg" alt="значок листьев">
@@ -20,7 +20,14 @@
                 <li><a href="#prices">Price</a></li>
                 <li><a href="#contact_Us">Contacts</a></li>
             </ul>
-            <div class="burger">
+            <ul class="nav__list_burger">
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#prices">Price</a></li>
+                <li><a href="#contact_Us">Contacts</a></li>
+            </ul>
+            <div class="burgerMenu">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -161,11 +168,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.burger').addEventListener('click', function() {
-        document.querySelector('.nav__list').classList.toggle('open');
-    });
-    </script>
+    <script src="scriptBurger.js"></script>
 </body>
 </html>
